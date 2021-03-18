@@ -1,42 +1,124 @@
 {
-  "name": "elecV2P sub",     
-  "surl": "https://raw.githubusercontent.com/StarStar-Lab/Profiles/master/box/elecV2P.json",  
-  "desc": "Task Subscription",
-  "list": [                          
-     {
+  "name": "elecV2P 定时任务订阅",
+  "author": "留个名字",
+  "desc": "xx 导出的任务订阅。该订阅适用于 elecV2P，与其他软件并不兼容。相关说明参考：https://github.com/elecV2/elecV2P-dei/tree/master/docs/06-task.md",
+  "date": "2021-03-18 21:26:48",
+  "list": [
+    {
       "name": "qtt",
       "type": "cron",
-      "time": "0 5 5-20 * * *",
+      "time": "0 5,45 5-20 * * *",
       "job": {
         "type": "runjs",
         "target": "qtt.js"
       }
     },
     {
-      "name": "supermarket",
+      "name": "Acfun",
       "type": "cron",
-      "time": "0 0 0 * * *",
+      "time": "0 1 0 * * *",
       "job": {
         "type": "runjs",
-        "target": "jd_blueCoin.js"
+        "target": "acfun.js"
       }
     },
     {
-      "name": "car",
+      "name": "Bilibili",
       "type": "cron",
-      "time": "0 0 0 * * *",
+      "time": "0 2 0 * * *",
       "job": {
         "type": "runjs",
-        "target": "jd_car_exchange.js"
+        "target": "bilibili.js"
       }
     },
     {
-      "name": "joy",
+      "name": "nem",
       "type": "cron",
-      "time": "0 0 0-16/8 * * *",
+      "time": "30 3 0 * * *",
       "job": {
         "type": "runjs",
-        "target": "joy_reward.js"
+        "target": "neteasemusic.js"
+      }
+    },
+    {
+      "name": "10000",
+      "type": "cron",
+      "time": "30 4 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "10000.js"
+      }
+    },
+    {
+      "name": "jddj",
+      "type": "cron",
+      "time": "30 5 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "jddj.js"
+      }
+    },
+    {
+      "name": "wb",
+      "type": "cron",
+      "time": "30 6 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "weibo.js"
+      }
+    },
+    {
+      "name": "nx",
+      "type": "cron",
+      "time": "30 8 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "Naixue.js"
+      }
+    },
+    {
+      "name": "smzdm",
+      "type": "cron",
+      "time": "30 9 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "smzdm.js"
+      }
+    },
+    {
+      "name": "wyx",
+      "type": "cron",
+      "time": "30 10 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "jeotrip.js"
+      }
+    },
+    {
+      "name": "jdtqz",
+      "type": "cron",
+      "time": "30 11 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "jdtqz.js"
+      }
+    },
+    {
+      "name": "glados",
+      "type": "cron",
+      "time": "30 12 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "glados.js"
+      }
+    },
+    {
+      "name": "txstock",
+      "type": "cron",
+      "time": "30 0 16 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "txstockqx.js"
       }
     }
   ]
