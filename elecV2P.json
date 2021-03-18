@@ -2,7 +2,7 @@
   "name": "elecV2P 定时任务订阅",
   "author": "留个名字",
   "desc": "xx 导出的任务订阅。该订阅适用于 elecV2P，与其他软件并不兼容。相关说明参考：https://github.com/elecV2/elecV2P-dei/tree/master/docs/06-task.md",
-  "date": "2021-03-18 21:26:48",
+  "date": "2021-03-18 22:22:51",
   "list": [
     {
       "name": "qtt",
@@ -10,7 +10,7 @@
       "time": "0 5,45 5-20 * * *",
       "job": {
         "type": "runjs",
-        "target": "qtt.js"
+        "target": "https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.js"
       }
     },
     {
@@ -19,7 +19,7 @@
       "time": "0 1 0 * * *",
       "job": {
         "type": "runjs",
-        "target": "acfun.js"
+        "target": "https://raw.githubusercontent.com/chavyleung/scripts/master/acfun/acfun.js"
       }
     },
     {
@@ -28,7 +28,7 @@
       "time": "0 2 0 * * *",
       "job": {
         "type": "runjs",
-        "target": "bilibili.js"
+        "target": "https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js"
       }
     },
     {
@@ -37,7 +37,7 @@
       "time": "30 3 0 * * *",
       "job": {
         "type": "runjs",
-        "target": "neteasemusic.js"
+        "target": "https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/quanx/neteasemusic.js"
       }
     },
     {
@@ -46,7 +46,7 @@
       "time": "30 4 0 * * *",
       "job": {
         "type": "runjs",
-        "target": "10000.js"
+        "target": "https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.js"
       }
     },
     {
@@ -55,7 +55,7 @@
       "time": "30 5 0 * * *",
       "job": {
         "type": "runjs",
-        "target": "jddj.js"
+        "target": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jddj.js"
       }
     },
     {
@@ -64,7 +64,7 @@
       "time": "30 6 0 * * *",
       "job": {
         "type": "runjs",
-        "target": "weibo.js"
+        "target": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js"
       }
     },
     {
@@ -73,7 +73,7 @@
       "time": "30 8 0 * * *",
       "job": {
         "type": "runjs",
-        "target": "Naixue.js"
+        "target": "https://raw.githubusercontent.com/zZPiglet/Task/master/Naixue/Naixue.js"
       }
     },
     {
@@ -82,7 +82,7 @@
       "time": "30 9 0 * * *",
       "job": {
         "type": "runjs",
-        "target": "smzdm.js"
+        "target": "https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/quanx/smzdm.js"
       }
     },
     {
@@ -91,7 +91,7 @@
       "time": "30 10 0 * * *",
       "job": {
         "type": "runjs",
-        "target": "jeotrip.js"
+        "target": "https://ooxx.be/js/jegotrip.js"
       }
     },
     {
@@ -100,7 +100,7 @@
       "time": "30 11 0 * * *",
       "job": {
         "type": "runjs",
-        "target": "jdtqz.js"
+        "target": "https://raw.githubusercontent.com/iisams/Scripts/master/liwo/jdtqz.js"
       }
     },
     {
@@ -109,7 +109,7 @@
       "time": "30 12 0 * * *",
       "job": {
         "type": "runjs",
-        "target": "glados.js"
+        "target": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/glados.js"
       }
     },
     {
@@ -118,7 +118,16 @@
       "time": "30 0 16 * * *",
       "job": {
         "type": "runjs",
-        "target": "txstockqx.js"
+        "target": "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/TXSTOCK/txstockqx.js"
+      }
+    },
+    {
+      "name": "didi",
+      "type": "cron",
+      "time": "30 0 1,20,21 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js"
       }
     }
   ]
