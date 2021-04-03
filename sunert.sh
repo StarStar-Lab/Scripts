@@ -19,13 +19,11 @@ else
     echo "update Sunert JavaScript"
 
     git -C /Sunert  reset --hard
-    git -C /custom pull origin master
+    git -C /Sunert  pull origin master
 fi    
 
-cp -f /monk/car/*_*.js /scripts
-cp -f /monk/i-chenzhe/*_*.js /scripts
-cp -f /monk/member/*_*.js /scripts
-cp -f /monk/normal/*_*.js /scripts
+cp -f /Sunert/Task/*.js /scripts
 
-## 合并monk&i-chenzhe大师脚本进入crontab列表
+
+## 合并Sunert脚本进入crontab列表
 cat /monk/i-chenzhe/remote_crontab_list.sh /monk/remote_crontab_list.sh >> /scripts/docker/merged_list_file.sh
