@@ -26,4 +26,4 @@ cp -f /Sunert/Task/*.js /scripts
 
 
 ## 合并Sunert脚本进入crontab列表
-cat /monk/i-chenzhe/remote_crontab_list.sh /monk/remote_crontab_list.sh >> /scripts/docker/merged_list_file.sh
+cat /scripts/docker/sunert_list.sh >> /scripts/docker/merged_list_file.sh
