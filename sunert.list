@@ -1,0 +1,2 @@
+*/15 * * * * sleep \$((RANDOM % 120)); node /custom/Task/youth.js |ts >> /logs/youth.log 2>&1
+*/7 * * * * sleep \$((RANDOM % 120)); node /custom/Task/txnews.js |ts >> /logs/txnews.log 2>&1
