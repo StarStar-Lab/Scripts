@@ -24,9 +24,10 @@ fi
 
 cp -f /Sunert/Task/*.js /scripts
 
+echo "merge custom crontab"
+cat /scripts/docker/mod_list.sh >> /scripts/docker/merged_list_file.sh
+
+echo "get single scripts"
 cd /scripts
 wget -O jrtt.js https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/Scripts/jrtt.js
 wget -O qczjspeed.js https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/qczjspeed.js
-
-## 合并自定义脚本进入crontab列表
-cat /scripts/docker/sunert_list.sh >> /scripts/docker/merged_list_file.sh
