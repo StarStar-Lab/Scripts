@@ -26,7 +26,7 @@ cp -f /Sunert/Task/*.js /scripts
 
 echo "merge custom crontab"
 cd /scripts/docker
-wget - O mod_list.sh https://raw.githubusercontent.com/StarStar-Lab/Scripts/main/mod_list.sh
+wget -O mod_list.sh https://raw.githubusercontent.com/StarStar-Lab/Scripts/main/mod_list.sh
 cat /scripts/docker/mod_list.sh >> /scripts/docker/merged_list_file.sh
 
 echo "get single scripts"
