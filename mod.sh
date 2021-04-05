@@ -33,3 +33,4 @@ echo "get single scripts"
 cd /scripts/logs
 wget -O jrtt.js https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/Scripts/jrtt.js
 wget -O qczjspeed.js https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/qczjspeed.js
+echo "done"
